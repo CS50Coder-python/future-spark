@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var giftAmount = document.getElementById('giftAmount');
   var giftKits = document.getElementById('giftKits');
   function updateGift(value) {
-    var kits = Math.floor(value / 25);
+    var kits = Math.floor(value / 20);
     giftAmount.textContent = '$' + Number(value || 0).toLocaleString('en-US');
     giftKits.textContent = kits + (kits === 1 ? ' kit' : ' kits');
   }

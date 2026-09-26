@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get Involved | Future Spark</title>
-<meta name="description" content="Request free STEM kits for your school, sponsor a kit for $25, or volunteer with Future Spark.">
+<meta name="description" content="Request free STEM kits for your school, sponsor a kit for $15 to $20, or volunteer with Future Spark.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Get Involved | Future Spark">
-<meta property="og:description" content="Request free STEM kits for your school, sponsor a kit for $25, or volunteer with Future Spark.">
+<meta property="og:description" content="Request free STEM kits for your school, sponsor a kit for $15 to $20, or volunteer with Future Spark.">
 <meta property="og:image" content="images/box-of-kits-wide.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -299,10 +299,10 @@ td li { margin-bottom: 4px; }
         <table>
           <thead><tr><th>Gift</th><th>What it makes</th></tr></thead>
           <tbody>
-            <tr><td>$25</td><td>1 kit for 1 student</td></tr>
-            <tr><td>$250</td><td>10 kits, a classroom group</td></tr>
-            <tr><td>$1,000</td><td>40 kits</td></tr>
-            <tr><td>$2,500</td><td>100 kits, about one school</td></tr>
+            <tr><td>$15 to $20</td><td>1 kit for 1 student</td></tr>
+            <tr><td>$200</td><td>10 kits, a classroom group</td></tr>
+            <tr><td>$1,000</td><td>50 kits</td></tr>
+            <tr><td>$2,000</td><td>100 kits</td></tr>
           </tbody>
         </table>
         <p class="form-note">Considering a larger gift or a grant? See <a href="for-funders.html">information for funders</a>.</p>
@@ -310,8 +310,8 @@ td li { margin-bottom: 4px; }
       <div class="card">
         <h3>Choose an amount</h3>
         <div class="amounts">
-          <button type="button" class="amount selected" data-amount="25">$25</button>
-          <button type="button" class="amount" data-amount="250">$250</button>
+          <button type="button" class="amount selected" data-amount="20">$20</button>
+          <button type="button" class="amount" data-amount="200">$200</button>
           <button type="button" class="amount" data-amount="1000">$1,000</button>
           <button type="button" class="amount" data-amount="custom">Other</button>
         </div>
@@ -320,7 +320,7 @@ td li { margin-bottom: 4px; }
           <strong>Send by Zelle to</strong>
           <div class="zelle-number">614-849-6939</div>
           <p class="small">Add "Future Spark kits" and your email in the memo so we can thank you and tell you where the kits went.</p>
-          <p class="small" style="margin:0">Your gift of <strong id="giftAmount">$25</strong> makes <strong id="giftKits">1 kit</strong>.</p>
+          <p class="small" style="margin:0">Your gift of <strong id="giftAmount">$20</strong> makes <strong id="giftKits">1 kit</strong>.</p>
         </div>
       </div>
     </div>
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var giftAmount = document.getElementById('giftAmount');
   var giftKits = document.getElementById('giftKits');
   function updateGift(value) {
-    var kits = Math.floor(value / 25);
+    var kits = Math.floor(value / 20);
     giftAmount.textContent = '$' + Number(value || 0).toLocaleString('en-US');
     giftKits.textContent = kits + (kits === 1 ? ' kit' : ' kits');
   }

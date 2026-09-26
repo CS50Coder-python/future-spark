@@ -275,7 +275,7 @@ td li { margin-bottom: 4px; }
         <h3>Scale so far</h3>
         <p>300 kits delivered to 3 elementary schools and 3 community organizations in Central Ohio as of September 2026, funded by door-to-door fundraising and school events. Goal: 1,000 kits to 10 or more schools across Columbus, Cleveland, and counties like Fairfax.</p>
         <h3>The ask</h3>
-        <p>Materials funding. $25 makes one kit; $2,500 makes 100. Sponsorship lets us buy in bulk, lower the per-kit cost, and reach more schools. Contact Satvik Surapaneni, founder, at <a href="mailto:futuresparks0@gmail.com">futuresparks0@gmail.com</a>.</p>
+        <p>Materials funding. $15 to $20 makes one kit; $2,000 makes 100. Sponsorship lets us buy in bulk, lower the per-kit cost, and reach more schools. Contact Satvik Surapaneni, founder, at <a href="mailto:futuresparks0@gmail.com">futuresparks0@gmail.com</a>.</p>
       </div>
     </div>
   </div>
@@ -287,9 +287,9 @@ td li { margin-bottom: 4px; }
     <table class="model">
       <thead><tr><th>Inputs</th><th>Activities</th><th>Outputs</th><th>Outcomes</th></tr></thead>
       <tbody><tr>
-        <td data-label="Inputs"><ul><li>Student volunteer hours</li><li>Materials at $25 per kit</li><li>Sponsorships and fundraising</li><li>Partner sites: 3 schools, 3 organizations</li></ul></td>
+        <td data-label="Inputs"><ul><li>Student volunteer hours</li><li>Materials at $15 to $20 per kit</li><li>Sponsorships and fundraising</li><li>Partner sites: 3 schools, 3 organizations</li></ul></td>
         <td data-label="Activities"><ul><li>Design and test two activities per kit</li><li>Hand-assemble kits with all materials and instructions</li><li>Take requests from schools and organizations</li><li>Deliver in person, free of charge</li></ul></td>
-        <td data-label="Outputs"><ul><li>Kits delivered: 300 to date, 1,000 goal</li><li>Sites served: 6 to date, 10 or more schools goal</li><li>Cost per kit: $25</li></ul></td>
+        <td data-label="Outputs"><ul><li>Kits delivered: 300 to date, 1,000 goal</li><li>Sites served: 6 to date, 10 or more schools goal</li><li>Cost per kit: $15 to $20</li></ul></td>
         <td data-label="Outcomes"><ul><li>Short term: students complete a build and answer "Would you want to try engineering again?"</li><li>Medium term: partner sites request kits again</li><li>Long term: more students from under-resourced schools choose STEM classes and activities</li></ul></td>
       </tr></tbody>
     </table>
@@ -301,18 +301,18 @@ td li { margin-bottom: 4px; }
     <div class="cols-2 top">
       <div>
         <div class="section-heading"><h2>Budget and funding</h2></div>
-        <p><strong>$25 makes one kit.</strong> Materials only: components, the bag, and printed instructions. All design, assembly, and delivery time is donated by students, so there is no overhead.</p>
+        <p><strong>$15 to $20 makes one kit</strong>, depending on the materials used. That covers components, the bag, and printed instructions. All design, assembly, and delivery time is donated by students, so there is no overhead.</p>
         <p><strong>Funding to date:</strong> door-to-door fundraising and school events. No grants yet.</p>
         <p><strong>Why bulk matters:</strong> buying materials for 1,000 kits at once lowers the cost of every kit.</p>
       </div>
       <div>
         <div class="section-heading"><h2>What a gift buys</h2></div>
         <table><tbody>
-          <tr><td>$25</td><td>1 kit for 1 student</td></tr>
-          <tr><td>$250</td><td>10 kits, a classroom group</td></tr>
-          <tr><td>$500</td><td>20 kits</td></tr>
-          <tr><td>$2,500</td><td>100 kits, about one school</td></tr>
-          <tr><td>$10,000</td><td>400 kits, about four schools, plus the bulk order that lowers every kit's cost</td></tr>
+          <tr><td>$20</td><td>1 kit for 1 student</td></tr>
+          <tr><td>$200</td><td>10 kits, a classroom group</td></tr>
+          <tr><td>$500</td><td>25 kits</td></tr>
+          <tr><td>$2,000</td><td>100 kits, about one school</td></tr>
+          <tr><td>$10,000</td><td>500 kits, about five schools, plus the bulk order that lowers every kit's cost</td></tr>
         </tbody></table>
       </div>
     </div>
@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var giftAmount = document.getElementById('giftAmount');
   var giftKits = document.getElementById('giftKits');
   function updateGift(value) {
-    var kits = Math.floor(value / 25);
+    var kits = Math.floor(value / 20);
     giftAmount.textContent = '$' + Number(value || 0).toLocaleString('en-US');
     giftKits.textContent = kits + (kits === 1 ? ' kit' : ' kits');
   }

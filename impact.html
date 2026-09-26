@@ -332,7 +332,7 @@ td li { margin-bottom: 4px; }
 <section class="cta">
   <div class="container">
     <h2>Help us reach the next 700 kits</h2>
-    <p>$25 makes one kit. $250 makes a classroom set.</p>
+    <p>$15 to $20 makes one kit. $200 makes a classroom set of ten.</p>
     <div class="btn-row">
       <a class="btn btn-light" href="get-involved.html#request">Request Kits</a>
       <a class="btn btn-outline" href="get-involved.html#sponsor">Sponsor a Kit</a>
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var giftAmount = document.getElementById('giftAmount');
   var giftKits = document.getElementById('giftKits');
   function updateGift(value) {
-    var kits = Math.floor(value / 25);
+    var kits = Math.floor(value / 20);
     giftAmount.textContent = '$' + Number(value || 0).toLocaleString('en-US');
     giftKits.textContent = kits + (kits === 1 ? ' kit' : ' kits');
   }

@@ -306,7 +306,7 @@ td li { margin-bottom: 4px; }
       <div>
         <div class="section-heading"><h2>Every kit is a different build</h2></div>
         <p>Circuits, solar-powered cars, biology, environmental science. Each kit is built around a real project a student can finish on their own. The one pictured is a sail car.</p>
-        <p><strong>$25 in materials makes one kit.</strong> Students donate all of the labor.</p>
+        <p><strong>$15 to $20 in materials makes one kit.</strong> Students donate all of the labor.</p>
         <div class="btn-row"><a class="btn btn-outline" href="kits.html">Explore the Kits</a></div>
       </div>
     </div>
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var giftAmount = document.getElementById('giftAmount');
   var giftKits = document.getElementById('giftKits');
   function updateGift(value) {
-    var kits = Math.floor(value / 25);
+    var kits = Math.floor(value / 20);
     giftAmount.textContent = '$' + Number(value || 0).toLocaleString('en-US');
     giftKits.textContent = kits + (kits === 1 ? ' kit' : ' kits');
   }

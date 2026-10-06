@@ -10,4 +10,4 @@ Static site, no build step. Seven pages: `index.html`, `about.html`, `kits.html`
 The forms open the visitor's email app with the answers filled in. To use a form service later, add an `action` URL to each `<form>` and remove the mailto handler in `js/main.js`.
 
 ## Editing content
-Edit the HTML pages directly. Numbers (300 kits, 3 schools, 3 organizations, the 1,000 goal) appear on the home, impact, and funders pages. `future-spark-one-pager.pdf` is the funders page printed; regenerate it from the browser's print dialog after edits.
+Edit the HTML pages directly. Numbers (500 kits, 10 schools, 3 organizations, the 1,000 goal) appear on the home, impact, and funders pages. `future-spark-one-pager.pdf` is the funders page printed; regenerate it from the browser's print dialog after edits.

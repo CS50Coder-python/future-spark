@@ -115,6 +115,7 @@ figcaption { font-size: 15px; color: var(--muted); margin-top: 8px; }
 
 /* Stats */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.stats-5 { grid-template-columns: repeat(5, 1fr); }
 .stat { border-left: 4px solid var(--yellow); padding-left: 18px; }
 .stat-number { font-family: var(--serif); font-size: 44px; font-weight: 700; color: var(--navy); line-height: 1.1; }
 .stat-label { font-weight: 600; margin-top: 4px; }
@@ -276,8 +277,9 @@ td li { margin-bottom: 4px; }
 
 <section class="band">
   <div class="container">
-    <div class="stats">
+    <div class="stats stats-5">
       <div class="stat"><div class="stat-number">500</div><div class="stat-label">Kits delivered</div><div class="stat-note">As of October 2026</div></div>
+      <div class="stat"><div class="stat-number">2,500</div><div class="stat-label">STEM materials delivered</div><div class="stat-note">Across all kits</div></div>
       <div class="stat"><div class="stat-number">10</div><div class="stat-label">Elementary schools</div><div class="stat-note">Central Ohio</div></div>
       <div class="stat"><div class="stat-number">3</div><div class="stat-label">Community organizations</div><div class="stat-note">Shelters and a makerspace</div></div>
       <div class="stat"><div class="stat-number">$0</div><div class="stat-label">Cost to schools</div><div class="stat-note">Free to every student</div></div>
@@ -357,7 +359,8 @@ td li { margin-bottom: 4px; }
         <ul class="partners">
           <li>Andrew's House <span>Delaware, Ohio</span></li>
           <li>Family Promise of Delaware County <span>Family shelter network</span></li>
-          <li>Makerspace Central <span>Community makerspace</span></li>
+          <li>OSU K-12 STEM Club <span>Ohio State University</span></li>
+          <li>Makerspace Central <span>Nonprofit makerspace</span></li>
           <li>Ten elementary schools <span>Central Ohio</span></li>
         </ul>
       </div>
